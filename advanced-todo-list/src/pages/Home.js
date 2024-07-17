@@ -10,8 +10,8 @@ const { Header, Content } = Layout;
 const Home = () => {
   return (
     <Layout>
-      <Header>Todo List</Header>
-      <Content>
+      <Header >Todo List</Header>
+      <Content >
         <CategoryFilter />
         <PriorityFilter />
         <StatusFilter />

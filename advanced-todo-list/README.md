@@ -27,4 +27,4 @@ A sophisticated Todo List application built with React, featuring task managemen
 
 ##DEMO
 
-[DEMO](https://todo-task-mauve.vercel.app/)
+[DEMO](https://todo-task-v1fo.vercel.app/)

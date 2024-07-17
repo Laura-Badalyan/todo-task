@@ -1,0 +1,9 @@
+.form{
+    margin: 80px 20px;
+    background-color: #a8b9a5;
+    padding: 20px;
+}
+.form_items input::placeholder,
+.form_items textarea::placeholder{
+    color: #a8b9a5;
+}

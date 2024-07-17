@@ -1,37 +1,38 @@
 .task-enter {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  .task-enter-active {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 500ms, transform 500ms;
-  }
-  .task-exit {
-    opacity: 1;
-    transform: scale(1);
-  }
-  .task-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 500ms, transform 500ms;
-  }
-  .task-enter {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  .task-enter-active {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 500ms, transform 500ms;
-  }
-  .task-exit {
-    opacity: 1;
-    transform: scale(1);
-  }
-  .task-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 500ms, transform 500ms;
-  }
-    
+  opacity: 0;
+  transform: scale(0.9);
+}
+.task-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms, transform 500ms;
+}
+.task-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.task-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+}
+.task{
+  background-color: rgb(236, 225, 189);
+  padding:  20px 20px 5px;
+  margin: 20px auto;
+  list-style-type: none;
+  width: 400px;
+}
+.task ul{
+  background-color: #f3f1de;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.task ul li{
+  background-color: #f3f1de;
+  list-style-type: none;
+}
+.task div{
+  word-wrap: break-word;
+}

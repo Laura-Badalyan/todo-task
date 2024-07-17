@@ -48,10 +48,10 @@ const TaskList = () => {
             <div {...provided.droppableProps} ref={provided.innerRef}>
               <TransitionGroup>
                 {filteredTasks.map((task, index) => (
-                  <CSSTransition key={task.id} timeout={500} classNames="task">
-                    <Draggable draggableId={task.id} index={index}>
+                  <CSSTransition key={task.id} timeout={500}>
+                    <Draggable  draggableId={task.id} index={index}>
                       {(provided) => (
-                        <div
+                        <div className='task'
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}

@@ -1,0 +1,15 @@
+.header_layout{
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.header_layout header{
+    background-color: #677165;
+    border-bottom: 5px dashed #a8b9a5;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
