@@ -32,11 +32,10 @@ const TaskList = () => {
       return;
     }
 
-    const reorderedTasks = Array.from(filteredTasks);
-    const [removed] = reorderedTasks.splice(result.source.index, 1);
-    reorderedTasks.splice(result.destination.index, 0, removed);
+    const startIndex = result.source.index;
+    const endIndex = result.destination.index;
 
-    dispatch(reorderTasks(reorderedTasks));
+    dispatch(reorderTasks({ startIndex, endIndex }));
   };
 
   return (
@@ -48,10 +47,10 @@ const TaskList = () => {
             <div {...provided.droppableProps} ref={provided.innerRef}>
               <TransitionGroup>
                 {filteredTasks.map((task, index) => (
-                  <CSSTransition key={task.id} timeout={500}>
-                    <Draggable  draggableId={task.id} index={index}>
+                  <CSSTransition key={task.id} timeout={500} classNames="task">
+                    <Draggable draggableId={task.id} index={index}>
                       {(provided) => (
-                        <div className='task'
+                        <div className="task"
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}

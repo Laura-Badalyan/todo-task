@@ -25,6 +25,6 @@ A sophisticated Todo List application built with React, featuring task managemen
    cd advanced-todo-list
 
 
-##DEMO
+## DEMO
 
 [DEMO](https://todo-task-v1fo.vercel.app/)

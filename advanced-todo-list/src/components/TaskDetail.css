@@ -1,0 +1,9 @@
+.details_card{
+    margin-top: 60px;
+    background-color: rgb(236, 225, 189);
+    padding: 10px;
+}
+
+.criteria{
+    word-wrap: break-word;    
+}

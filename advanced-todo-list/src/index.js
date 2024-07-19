@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
-import 'antd/dist/reset.css'; // Import Ant Design styles
+import 'antd/dist/reset.css';
 import { ConfigProvider } from 'antd';
 
 const container = document.getElementById('root');
